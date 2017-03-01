@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+    <Node
+        Expires="300"
+        Key="getWeatherInfo"
+        NetType="get"
+        Url="http://www.weather.com.cn/data/sk/101010100.html" />
+
+    <Node
+        Expires="0"
+        Key="login"
+        NetType="post"
+        Url="http://st.com:8080/smarthome/index.php/base/Login/login" />
+</url>
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="secondary_text">#727272</color>
+    <color name="white">#ffffffff</color>
+    <color name="transparent_black">#99aaaaaa</color>
+
+    <!-- smart model -->
+
+    <color name="text_color_332d38">#332d38</color>
+    <color name="text_color_c4c2cb">#c4c2cb</color>
+    <color name="text_color_9b979f">#9b979f</color>
+    <color name="text_color_ffffff">#ffffff</color>
+    <color name="text_color_675cb4">#675cb4</color>
+    <color name="text_color_666666">#666666</color>
+
+    <color name="divide_view_color_c1c0c8">#c1c0c8</color>
+    <color name="button_background_675cb4">#675cb4</color>
+    <color name="button_background_e3e3e9">#e3e3e9</color>
+
+
+    <color name="text_color_302e33">#cc302e33</color>
+
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/include_toolbar" />
+
+    <com.example.example.widget.ViewPagerScroll
+        android:id="@+id/viewPager"
+        android:layout_below="@+id/appbar"
+        android:layout_above="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" />
+
+    <FrameLayout
+        android:id="@+id/verify_wrapper"
+        android:layout_below="@+id/appbar"
+        android:layout_above="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_black"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/llt_verify"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_verify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/need_to_verify"
+                android:textSize="46px"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/verify_btn"
+                android:layout_width="400px"
+                android:layout_height="146px"
+                android:layout_gravity="center"
+                android:layout_below="@+id/tv_verify"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="88px"
+                android:background="@drawable/selector_btn_common"
+                android:gravity="center"
+                android:text="@string/verification"
+                android:textColor="@color/text_color_ffffff"
+                android:textSize="42px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/offline_wrapper"
+            android:layout_marginTop="30px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30px"
+                android:src="@mipmap/ic_backups" />
+
+            <TextView
+                android:id="@+id/tv_offine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/box_offline"
+                android:textSize="46px"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30px"
+                android:src="@mipmap/ic_backups" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <View
+        android:id="@+id/line_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@+id/tabLayout"
+        android:background="@color/divide_view_color_c1c0c8"
+        android:layout_marginBottom="0px" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_alignParentBottom="true"
+        style="@style/HomePageTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="144px"
+        android:fillViewport="false" />
+</RelativeLayout>
